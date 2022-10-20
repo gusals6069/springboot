@@ -26,6 +26,15 @@ repositories {
 }
 
 dependencies {
+    //springboot
     implementation('org.springframework.boot:spring-boot-starter-web')
+    implementation('org.springframework.boot:spring-boot-starter-data-jpa')
     testImplementation('org.springframework.boot:spring-boot-starter-test')
+
+    //lombok
+    compileOnly('org.projectlombok:lombok:1.18.24')
+    annotationProcessor('org.projectlombok:lombok:1.18.24')
+
+    //h2_for_JPA
+    compileOnly('com.h2database:h2')
 }
