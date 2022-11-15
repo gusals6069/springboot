@@ -36,5 +36,5 @@ dependencies {
     annotationProcessor('org.projectlombok:lombok:1.18.24')
 
     //h2_for_JPA
-    compileOnly('com.h2database:h2')
+    runtimeOnly('com.h2database:h2')
 }
