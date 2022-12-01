@@ -1,5 +1,7 @@
 package com.hmahn.book.springboot.domain.posts;
 
+import com.hmahn.book.springboot.domain.BaseTimeEntity;
+
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -18,7 +20,7 @@ import javax.persistence.Id;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     // id : 해당 테이블의 PK값을 나타냄
     // GeneratedValue : stratgy를 GenerationType.IDENTITY로 설정해야 auto_increment가 적용됨 (스프링부트 2.0부터)
